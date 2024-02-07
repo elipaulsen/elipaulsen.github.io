@@ -356,6 +356,11 @@ interface Config {
   skills?: Array<string>;
 
   /**
+   * Course list
+   */
+  courses?: Array<string>;
+
+  /**
    * Experience list
    */
   experiences?: Array<Experience>;

@@ -13,8 +13,8 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      header: 'Projects',
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 6, // How many projects to display.
@@ -25,40 +25,24 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: []
+        projects: ['elipaulsen/Banking-JavaFx', 'elipaulsen/TaskTrack', 'elipaulsen/Wordle', 'elipaulsen/Multithreaded-Rootfinder', 'elipaulsen/Barcodes', 'elipaulsen/KingsOnTheCorner', 'elipaulsen/Networked-LinkedList', 'elipaulsen/Comparator-Network', 'elipaulsen/Programmable-Chess-Clock', 'elipaulsen/Polymorphic-Scoreboard']
       },
     },
     external: {
-      header: 'My Projects',
+      header: '',
       // To hide the `External Projects` section, keep it empty.
       projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
+        
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Eli\'s Portfolio',
     description: '',
     imageURL: '',
   },
   social: {
     linkedin: 'eli-paulsen',
-    website: 'https://www.github.com/elipaulsen',
     phone: '3193251321',
     email: 'eli.m.paulsen@gmail.com',
   },
@@ -83,6 +67,17 @@ const CONFIG = {
     'Subversion',
     'Docker',
   ],
+  courses: [
+    'Data Structures',
+    'Algorithms',
+    'Software Design',
+    'Embedded Systems',
+    'Operating Systems',
+    'High Performance Computer Architecture',
+    'Software Security',
+    'Networks',
+    'Programming Language Concepts'
+  ],
   experiences: [
     {
       company: 'Collins Aerospace',
@@ -92,7 +87,7 @@ const CONFIG = {
     },
     {
       company: 'University of Iowa AIS',
-      position: 'Student Software Developer',
+      position: 'Software Developer Intern',
       from: 'December 2022',
       to: 'Present',
     },
@@ -107,11 +102,11 @@ const CONFIG = {
   ],
 
   themeConfig: {
-    defaultTheme: 'sunset',
+    defaultTheme: 'dim',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -159,22 +154,15 @@ const CONFIG = {
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
+      primary: '#FFFFFF',
+      secondary: '#FFFFFF',
+      accent: '#FFFFFF',
+      neutral: '#FFFFFF',
       'base-100': '#E3E3ED',
       '--rounded-box': '3rem',
       '--rounded-btn': '3rem',
     },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
 
   enablePWA: true,
 };
