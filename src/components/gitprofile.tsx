@@ -24,12 +24,10 @@ import SkillCard from './skill-card';
 import CoursesCard from './courses-card/courses';
 import ExperienceCard from './experience-card';
 import EducationCard from './education-card';
-import CertificationCard from './certification-card';
 import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
 import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
-import Footer from './footer';
 
 /**
  * Renders the GitProfile component.
