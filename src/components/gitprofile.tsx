@@ -244,6 +244,8 @@ const GitProfile = ({ config }: { config: Config }) => {
                         experiences={sanitizedConfig.experiences}
                       />
                     )}
+                  </div>
+                  <div className="grid grid-cols-1 gap-6">
                     {sanitizedConfig.projects.github.display && (
                       <GithubProjectCard
                         header={sanitizedConfig.projects.github.header}
